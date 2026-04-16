@@ -1,70 +1,53 @@
+# Project Title
 
+This is a comprehensive documentation for the Saucedemo pytest project.
 
-# selenium-python
+## Introduction
 
-### Step 1: **Clone the project**
+The Saucedemo pytest project is designed to facilitate automated testing of web applications. This project utilizes the [pytest](https://pytest.org) framework to create and manage tests efficiently.
 
-Open Terminal:
+## Installation
 
+To get started with the project, follow these instructions:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sha-killMahmud/saucedemo_pytest.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd saucedemo_pytest
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+To run the tests, execute the following command:
 ```bash
-https://github.com/Sha-killMahmud/saucedemo_pytest.git
+pytest
 ```
 
----
+## Test Structure
 
-### Step 2: **Create and Activate a Virtual Environment**
+The tests are organized into modules, each covering a specific area of functionality. Inside each module, you will find various test functions that validate the expected behavior of the application.
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+## Contributing
 
-### Check if Selenium is installed or not, and if installed, then show the version
+If you would like to contribute to this project, please follow these steps:
 
-```bash
-pip show selenium
-```
+1. Fork the repository.
+2. Create a new branch using the naming convention `feature/your-feature-name`.
+3. Implement your feature or bug fix.
+4. Submit a pull request detailing your changes.
 
-### Step 3: **Install Selenium and WebDriver Manager**
+## License
 
-```bash
-pip install selenium
-pip install selenium webdriver-manager
-```
-### optional: **upgrade selenium (If available)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```bash
-pip install --upgrade selenium
-```
+## Acknowledgments
 
-### optional: **upgrade pip (If available)
-
-```bash
-python.exe -m pip install --upgrade pip
-```
-
-### Step 4: **Install pytest and pytest html**
-
-```bash
-pip install pytest
-pip install pytest-html
-pip install pytest-dependency
-pip install pytest-order
-
-```
-
-### Step 5: **Run the Script**
-
-In Terminal: To run a specific file
-
-```bash
-pytest <file_name> --html=reports/report.html --self-contained-html
-
-```
-
-In Terminal: To run all testcases
-
-```bash
-pytest --html=reports/report.html --self-contained-html
-
-```
+- [Sauce Labs](https://saucelabs.com) for providing a platform to execute tests on various browsers and environments.
+- The open-source community for their contributions and support in creating testing frameworks.
